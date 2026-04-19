@@ -84,12 +84,15 @@ const formSlice = createSlice({
     state.token = action.payload.accessToken;
 
       })
-      .addCase(Log_in.rejected, (state, action) => {
-        state.isLoading = false;
-        state.error = action.payload;
-          state.error.general = action.payload;
+    .addCase(Log_in.rejected, (state, action) => {
+  state.isLoading = false;
 
-      })
+  state.error = {
+    email: '',
+    password: '',
+    general: action.payload || 'Login failed'
+  };
+})
   },
 });
 
