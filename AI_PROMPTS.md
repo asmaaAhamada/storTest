@@ -1,49 +1,78 @@
-AI Prompts Documentation
-📌 Overview
+## **AIPROMPT**
 
-This document includes the main AI prompts used during development.
+### **AI Prompts Documentation**
 
-1- edit photo
-انشا لي نفس هذه الصورة  لكن بدقة اعلى واجعل طقم الرجل بهذا اللون export const darkblue ='rgba(19, 41, 106, 1)'
+---
 
-prompt 2:search Table-Library
-فضل بدائل لـ MUI Table
- 🔥 Ant Design (أفضل بديل جاهز وسهل)
+###  **Overview**
 
-Ant Design
+This document outlines the key AI prompts used throughout the development process, along with their outcomes and insights.
 
-✔️ المميزات:
-Table جاهز وقوي جداً
-sorting / pagination / filtering جاهز
-أقل مشاكل من MUI tables
-شائع جداً في المشاريع الكبيرة
+---
 
-Prompt 3:
-how to install Ant Design
+### **1. Image Editing Prompt**
 
-Result:
-افتح التيرمنال داخل مشروعك:
+**Prompt:**
+Create the same image but with higher resolution, and change the man's outfit color to:
 
+```js
+export const darkblue = 'rgba(19, 41, 106, 1)';
+```
+
+---
+
+### **2. UI Library Research – Table Alternatives**
+
+**Prompt:**
+Suggest alternatives to MUI Table.
+
+**Top Recommendation:**  **Ant Design (Best Ready-to-Use Option)**
+
+**Why Ant Design?**
+
+* Powerful and fully-featured Table component
+* Built-in sorting, pagination, and filtering
+* More stable and fewer issues compared to MUI tables
+* Widely used in large-scale applications
+
+---
+
+### **3. Installing Ant Design**
+
+**Prompt:**
+How to install Ant Design?
+
+**Result:**
+Open your project terminal and run:
+
+```bash
 npm install antd
+```
 
-أو إذا تستخدم yarn:
+Or if using Yarn:
 
+```bash
 yarn add antd
-🎨 أهم خطوة (لا تنساها)
+```
 
-لازم تستورد CSS تبع المكتبة:
+ **Important Step (Don’t Skip):**
+Make sure to import the library's CSS file in your project.
 
-Prompt 4: Deploy to GitHub Pages
+---
 
+### **4. Deployment – GitHub Pages**
 
-How to deploy Vite React app to GitHub Pages?
+**Prompt:**
+How to deploy a Vite + React application to GitHub Pages?
 
-Result:
+**Result:**
 
-Configured vite base path
-Used gh-pages package
-Switched to HashRouter
-=====================================
-Conclusion
+* Configured Vite base path
+* Used `gh-pages` package
+* Switched to `HashRouter` for proper routing
 
-AI helped speed up development, fix bugs, and improve UI logic.
+---
+
+### ** Conclusion**
+
+AI significantly accelerated the development process by helping with problem-solving, fixing bugs, improving UI logic, and providing efficient implementation guidance.
